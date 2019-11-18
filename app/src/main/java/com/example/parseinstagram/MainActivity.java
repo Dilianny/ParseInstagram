@@ -23,6 +23,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.parseinstagram.Fragments.ComposeFragment;
+import com.example.parseinstagram.Fragments.PostsFragment;
+import com.example.parseinstagram.Fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -48,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
         final FragmentManager fragmentManager = getSupportFragmentManager();
         final Fragment fragment1 = new ComposeFragment();
-        //final Fragment fragment2 = new SecondFragment();
-        //final Fragment fragment3 = new ThirdFragment();
+        final Fragment fragment2 = new PostsFragment();
+        final Fragment fragment3 = new ProfileFragment();
 
         btnLogout = findViewById(R.id.btnLogout);
         bottomNavigation = findViewById(R.id.bottom_navigation);
@@ -73,16 +75,14 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment;
                 switch (menuItem.getItemId()) {
                     case R.id.action_home:
-                        //change
-                        fragment = fragment1;
+                        fragment = fragment2;
                         break;
                     case R.id.action_add:
                         fragment = fragment1;
                         break;
                     case R.id.action_profile:
                     default:
-                        //change
-                        fragment = fragment1;
+                        fragment = fragment3;
                         break;
                 }
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();

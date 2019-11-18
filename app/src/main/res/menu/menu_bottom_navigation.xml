@@ -13,12 +13,12 @@
         android:icon="@drawable/ic_add_circle_black_24dp"
         android:title="Add"
         app:showAsAction="ifRoom" />
-    <item
+   <!-- <item
         android:id="@+id/action_like"
         android:enabled="true"
         android:icon="@drawable/ic_favorite_white_24dp"
         android:title="Like"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom" /> -->
     <item
         android:id="@+id/action_profile"
         android:enabled="true"
