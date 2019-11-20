@@ -6,7 +6,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignupActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:backgroundTint="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Instagram"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_xxlarge"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_large"
+        android:text="Sign up to see photos and videos from your friends"/>
+
 
     <EditText
         android:id="@+id/etNewusername"
@@ -14,13 +32,19 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="username"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textSize="@dimen/font_medium_large"
+        android:textColorHint="@color/grey_3"
+        android:paddingLeft="@dimen/row_text_padding"
+        android:paddingRight="@dimen/row_text_padding"/>
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="email address"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/row_text_padding"
+        android:paddingRight="@dimen/row_text_padding"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -32,7 +56,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/etNewpassword"
             android:inputType="textPassword"
-            android:hint="password" />
+            android:hint="password"
+            android:paddingLeft="@dimen/row_text_padding"
+            android:paddingRight="@dimen/row_text_padding"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,11 +72,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/etConfirmnewpassword"
             android:inputType="textPassword"
-            android:hint="Confirm password" />
+            android:hint="Confirm password"
+            android:paddingLeft="@dimen/row_text_padding"
+            android:paddingRight="@dimen/row_text_padding"/>
     </com.google.android.material.textfield.TextInputLayout>
     <Button
         android:id="@+id/btnDone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Done" />
+        android:text="Sign up" />
 </LinearLayout>

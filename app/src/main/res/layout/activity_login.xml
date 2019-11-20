@@ -6,8 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:orientation="vertical"
-    >
+    android:gravity="center"
+    android:background="@drawable/instagram_gradient_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Instagram"
+        android:background="@color/transparent"
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:textSize="@dimen/font_xlarge_xxlarge"/>
 
 
     <EditText
@@ -16,7 +26,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="username"
-        android:inputType="text" />
+        android:inputType="text"
+        android:paddingLeft="@dimen/row_text_padding"
+        android:paddingRight="@dimen/row_text_padding"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -28,7 +40,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/etPassword"
             android:inputType="textPassword"
-            android:hint="password" />
+            android:hint="password"
+            android:paddingLeft="@dimen/row_text_padding"
+            android:paddingRight="@dimen/row_text_padding"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -36,7 +50,8 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:text="Login"
+        android:backgroundTint="@color/transparent"/>
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -50,6 +65,7 @@
         android:id="@+id/btnSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SignUp"/>
+        android:text="SignUp"
+        android:backgroundTint="@color/transparent"/>
 </LinearLayout>
 </LinearLayout>

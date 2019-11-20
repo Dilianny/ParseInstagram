@@ -6,14 +6,30 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civProfilePic"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FFFFFFFF"
+        app:civ_border_width="1dp" />
 
     <TextView
         android:id="@+id/tvHandle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/civProfilePic"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="10dp"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-        android:textSize="20sp" />
+        android:textSize="10sp" />
+</RelativeLayout>
 
     <ImageView
         android:id="@+id/ivImage"
